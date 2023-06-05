@@ -69,7 +69,7 @@ const NavbarMobile: React.FC = () => {
             </div>
           </Link>
           <a
-            href="https://app.inkdrop.app/signin"
+            href="https://social-preview.vercel.app/signin"
             style={{ width: "100%" }}
             target="_blank"
             rel="noopener noreferrer"

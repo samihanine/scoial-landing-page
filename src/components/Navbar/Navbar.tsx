@@ -2,27 +2,12 @@ import Link from "next/link";
 import Logo from "@/components/Logo/LogoWhite";
 import Button from "@/components/Buttons/Button";
 import NavbarMobile from "./NavbarMobile";
-import { useEffect, useState } from "react";
-import { useRouter } from "next/router";
+import { useState } from "react";
 import { smoothScrollTo } from "../Sections/LandingPage/helpers";
+import { APP_URL } from "@/utils/constants";
 
 const Navbar: React.FC = () => {
   const [scroll, setScroll] = useState(false);
-
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     if (window.scrollY > 0) {
-  //       setScroll(true);
-  //     } else {
-  //       setScroll(false);
-  //     }
-  //   };
-
-  //   window.addEventListener('scroll', handleScroll);
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll);
-  //   };
-  // }, []);
 
   return (
     <>
@@ -80,9 +65,9 @@ const Navbar: React.FC = () => {
           </Link>
         </div>
         <div className="hidden md:inline-block">
-          <Button className="" onClick={() => console.log("nothing")}>
-            Sign in
-          </Button>
+          <a href={APP_URL} className="w-full" target="_blank" rel="noreferrer">
+            <Button className="">Sign in</Button>
+          </a>
         </div>
       </nav>
     </>
