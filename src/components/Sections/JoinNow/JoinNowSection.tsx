@@ -4,7 +4,7 @@ import WebsiteStep from "./Steps/WebsiteStep";
 import SocialStep from "./Steps/SocialStep";
 import Image from "next/image";
 import EmailStep from "./Steps/EmailStep";
-import { APP_ONBOARDING_URL } from "@/utils/constants";
+import { APP_URL } from "@/utils/constants";
 
 interface FormData {
   website?: string;
@@ -18,7 +18,7 @@ interface FormData {
 
 const redirectToDashboard = (data: FormData) => {
   const params = new URLSearchParams(data as any);
-  window.location.href = `${APP_ONBOARDING_URL}?${params.toString()}`;
+  window.location.href = `${APP_URL}?${params.toString()}`;
 };
 
 const JoinNowSection: React.FC = () => {
