@@ -65,7 +65,7 @@ const LandingSection: React.FC = () => {
         </div>
         <div className="mx-auto">
           <a
-            href={APP_URL + "/singup"}
+            href={APP_URL + "/signup"}
             style={{ width: "100%" }}
             target="_blank"
             rel="noopener noreferrer"

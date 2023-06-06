@@ -49,7 +49,7 @@ const PrincingCard: React.FC<{
 
       <div className="w-full flex justify-end items-end h-full">
         <a
-          href={APP_URL + "/singup"}
+          href={APP_URL + "/signup"}
           style={{ width: "100%" }}
           target="_blank"
           rel="noopener noreferrer"
