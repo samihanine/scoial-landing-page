@@ -4,6 +4,7 @@ import Logo from "../Logo/Logo";
 import Button from "../Buttons/Button";
 import { ArrowRight, Hamburger } from "@/components/SVGs/SVGs";
 import { smoothScrollTo } from "../Sections/LandingPage/helpers";
+import { APP_URL } from "@/utils/constants";
 
 const NavbarMobile: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -69,15 +70,12 @@ const NavbarMobile: React.FC = () => {
             </div>
           </Link>
           <a
-            href="https://social-preview.vercel.app/signin"
+            href={APP_URL}
             style={{ width: "100%" }}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button
-              onClick={() => console.log("login")}
-              className="self-center w-full text-md mt-10"
-            >
+            <Button className="self-center w-full text-md mt-10">
               Sign in
             </Button>
           </a>

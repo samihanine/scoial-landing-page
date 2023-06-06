@@ -3,6 +3,7 @@ import Button from "../../Buttons/Button";
 import { useRouter } from "next/router";
 import { ArrowDown } from "../../SVGs/SVGs";
 import { smoothScrollTo } from "./helpers";
+import { APP_URL } from "@/utils/constants";
 
 const bgStyle = {
   backgroundImage: `
@@ -63,9 +64,14 @@ const LandingSection: React.FC = () => {
           />
         </div>
         <div className="mx-auto">
-          <Button className="" onClick={() => router.push("join")}>
-            Join now
-          </Button>
+          <a
+            href={APP_URL + "/singup"}
+            style={{ width: "100%" }}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button className="">Join now</Button>
+          </a>
         </div>
         <div className="hidden md:inline-block">
           <Image

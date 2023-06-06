@@ -1,2 +1,1 @@
-export const APP_URL = "https://social-preview.vercel.app";
-export const APP_ONBOARDING_URL = `${APP_URL}/onboarding`;
+export const APP_URL = process.env.NEXT_PUBLIC_PLATFORM_URL;

@@ -2,6 +2,7 @@ import { MouseEventHandler } from "react";
 import BarDivider from "../BarDivider";
 import Button from "../Buttons/Button";
 import { OutlinedFavorite, OutlinedLightning } from "../SVGs/SVGs";
+import { APP_URL } from "@/utils/constants";
 
 const enhancedBackground = {
   backgroundImage:
@@ -15,7 +16,7 @@ const PrincingCard: React.FC<{
   price: string;
   enhance: boolean;
   children?: React.ReactNode;
-}> = ({ onClick, title, description, price, enhance, children }) => {
+}> = ({ title, description, price, enhance, children }) => {
   return (
     <div
       style={enhance ? enhancedBackground : {}}
@@ -47,9 +48,16 @@ const PrincingCard: React.FC<{
       <BarDivider />
 
       <div className="w-full flex justify-end items-end h-full">
-        <Button onClick={onClick} outlined={!enhance} className="w-full">
-          Join now
-        </Button>
+        <a
+          href={APP_URL + "/singup"}
+          style={{ width: "100%" }}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button outlined={!enhance} className="w-full">
+            Join now
+          </Button>
+        </a>
       </div>
     </div>
   );
