@@ -27,21 +27,21 @@ const PrincingSection: React.FC = () => {
           description={
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
           }
-          price={"$9.99"}
+          price={"$89.99"}
           enhance={false}
         >
           <ul className="text-gray-600">
             <li className="flex flex-row items-center space-x-2">
               <AiOutlineCodeSandbox color="black" />
-              <span>Lorem ipsum</span>
+              <span>1 workspace</span>
             </li>
             <li className="flex flex-row items-center space-x-2">
               <AiOutlineRocket color="black" />
-              <span>Lorem ipsum</span>
+              <span>3+ team members</span>
             </li>
             <li className="flex flex-row items-center space-x-2">
               <AiOutlineBell color="black" />
-              <span>Lorem ipsum</span>
+              <span>Standard support</span>
             </li>
           </ul>
         </PrincingCard>
@@ -51,22 +51,22 @@ const PrincingSection: React.FC = () => {
           description={
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
           }
-          price={"$19.99"}
+          price={"$129.99"}
           enhance={true}
         >
           {" "}
           <ul className="text-gray-600">
             <li className="flex flex-row items-center space-x-2">
               <AiOutlineCodeSandbox color="black" />
-              <span>Lorem ipsum</span>
+              <span>9+ workspaces</span>
             </li>
             <li className="flex flex-row items-center space-x-2">
               <AiOutlineRocket color="black" />
-              <span>Lorem ipsum</span>
+              <span>Unlimied team members</span>
             </li>
             <li className="flex flex-row items-center space-x-2">
               <AiOutlineBell color="black" />
-              <span>Lorem ipsum</span>
+              <span>Priority support</span>
             </li>
           </ul>
         </PrincingCard>

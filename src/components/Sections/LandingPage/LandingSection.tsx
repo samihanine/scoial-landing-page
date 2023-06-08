@@ -46,12 +46,12 @@ const LandingSection: React.FC = () => {
       </div>
 
       <h1 className="lg:text-5xl md:text-4xl sm:text-3xl text-2xl font-bold text-black text-center flex-col flex md:space-y-5">
-        <span>Easy way to automate content</span>
-        <span>creation for your business</span>
+        <span>Unleash Your Social Media Potential </span>
+        <span>with Your Personal AI Assistant.</span>
       </h1>
       <p className="md:text-3xl sm:text-2xl text-lg text-black text-center">
-        Streamline your social media strategy with our powerful automation
-        tools.
+        Smart, Seamless, Strategic - Welcome to the New Age of AI-Assisted
+        Social Media Management.
       </p>
       <div className="flex flex-col md:space-x-9 space-y-5 md:flex-row">
         <div className="hidden md:inline-block">

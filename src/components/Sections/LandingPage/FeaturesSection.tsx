@@ -54,26 +54,34 @@ const FeaturesSection: React.FC = () => {
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 w-full px-10 md:w-[700px]">
         <FeatureCard
-          title="High quality service"
-          description={lorem}
+          title="AI-driven Tailored Content"
+          description={
+            "Content is king, but not all content is created equal. Our intelligent AI doesn't just churn out generic posts – it crafts tailor-made content designed to resonate with your specific audience. By scanning your website and creating content that speaks your brand's language, we enhance your brand's voice and engage your followers in a meaningful way."
+          }
           icon={<AiOutlineCheck />}
           bg={bg1}
         />
         <FeatureCard
-          title="Fine tuned and customizable content"
-          description={lorem}
+          title="Master Social Media"
+          description={
+            "Time is money. In today's digital world, curating and scheduling social media content can be a full-time job. We aim to gift that time back to you. Whether it's Facebook, Instagram, LinkedIn, or Twitter, our easy-to-use analytics and automatic posting feature ensure your content reaches your audience where they are most engaged, freeing up valuable hours that you can reinvest in other crucial aspects of your business."
+          }
           icon={<AiOutlineSetting />}
           bg={bg2}
         />
         <FeatureCard
-          title="Scheduled content sharing"
-          description={lorem}
+          title="Stay Ahead with AI"
+          description={
+            "Our user-friendly platform adapts to the latest trends, ensuring your content is always fresh and engaging. What's more? Our intuitive content calendar lets you review, edit, and schedule posts with just a few clicks. We're continuously improving our features - from integrating Canva for image creation to using AI for image suggestions, we're committed to keeping you ahead of the curve."
+          }
           icon={<AiOutlineSchedule />}
           bg={bg3}
         />
         <FeatureCard
-          title="Support for multiple platforms"
-          description={lorem}
+          title="Secure and Time-Saving"
+          description={
+            "User privacy is our top priority. We use Auth0 to manage user authentication, ensuring we never store any of your passwords on our servers. But that's not all. With our platform, you save precious time on content creation and management, freeing you up to focus on your core business. And as we grow and learn from our users, we keep refining our features to make your journey even smoother."
+          }
           icon={<AiOutlineAppstoreAdd />}
           bg={bg4}
         />

@@ -12,7 +12,9 @@ const FeatureCard: React.FC<{
     >
       <div className="flex flex-col items-center justify-between w-full h-full">
         <div className="flex flex-col items-start justify-start w-full">
-          <div className="border rounded-full border-gray-400 p-2 bg-white shadow-md">{icon}</div>
+          <div className="border rounded-full border-gray-400 p-2 bg-white shadow-md">
+            {icon}
+          </div>
 
           <h1 className="text-lg md:text-xl font-bold mt-5 w-full">{title}</h1>
         </div>
