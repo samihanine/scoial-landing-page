@@ -37,9 +37,6 @@ radial-gradient(at 86% 84%, hsla(239,94%,50%,0.05) 0px, transparent 50%)
 `,
 };
 
-const lorem =
-  "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quidem, quasi pariatur adipisci eos obcaecati esse autem laudantium inventore dolorum a cupiditate voluptatem provident ut placeat laboriosam tenetur doloremque tempora.";
-
 const FeaturesSection: React.FC = () => {
   return (
     <section

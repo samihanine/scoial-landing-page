@@ -10,7 +10,7 @@ const FeatureCard: React.FC<{
       className="flex flex-col items-center justify-start w-full h-full border rounded-lg border-gray-300 bg-white shadow-lg p-5 text-black"
       style={bg}
     >
-      <div className="flex flex-col items-center justify-between w-full h-full">
+      <div className="flex flex-col items-center w-full h-full">
         <div className="flex flex-col items-start justify-start w-full">
           <div className="border rounded-full border-gray-400 p-2 bg-white shadow-md">
             {icon}

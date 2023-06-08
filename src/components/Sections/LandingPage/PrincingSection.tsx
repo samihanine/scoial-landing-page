@@ -12,20 +12,22 @@ const PrincingSection: React.FC = () => {
   return (
     <section
       id="pricing"
-      className="flex flex-col items-center justify-center bg-center w-full box-border gap-y-10 gap-x-10 p-25 md:pt-24 md:p-10"
+      className="flex flex-col items-center justify-center bg-center w-full mx-auto box-border gap-y-10 gap-x-10 p-25 md:pt-24 md:p-10"
     >
       <h1 className="lg:text-4xl md:text-3xl text-xl font-bold text-black text-center flex-col flex md:space-y-5 px-16">
         <span>Choose the pricing plan</span>
         <span className="text-lg md:text-2xl font-normal">
-          that fits your needs
+          We believe in affordable and transparent pricing. Choose a plan that
+          suits your needs the best, and remember - no hidden fees, no
+          surprises. Just straight-up value for your business.
         </span>
       </h1>
-      <div className="flex flex-col md:space-x-9 md:flex-row gap-y-10 gap-x-10 px-10">
+      <div className="flex flex-col md:flex-row items-stretch md:space-x-9 gap-y-10 gap-x-10 px-10">
         <PrincingCard
           onClick={() => router.push("join")}
           title={"Basic"}
           description={
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            "For solo entrepreneurs and creators just starting their social media journey. Professional: For growing businesses ready to amplify their social media presence."
           }
           price={"$89.99"}
           enhance={false}
@@ -49,7 +51,7 @@ const PrincingSection: React.FC = () => {
           onClick={() => router.push("join")}
           title={"Pro"}
           description={
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            "For established brands seeking to optimize and scale their social media strategy. (contact us for pricing) "
           }
           price={"$129.99"}
           enhance={true}
